@@ -12,7 +12,7 @@ Just download the `summarise-update.sh` from releases page to your host and call
 
 ### Known Issues
 
-- Performance is pretty bad right now (mintupdate-cli is called **4 times!**)
+- Performance is pretty bad right now (`mintupdate-cli` is called **4 times!**)
     - will be fixed in the future
 
 ### Sample Output On Terminal
