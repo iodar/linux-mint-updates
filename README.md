@@ -1,6 +1,18 @@
+## Print Packages
 
+This simple script retrives all security and kernel updates with `mintupdate-cli` on your `linux mint` and prints a
+summary to yout terminal.
 
-### Output On Terminal
+### Usage
+
+Just download the \[scriptname\] from latest release to your host and call execute it.
+
+### Known Issues
+
+- Performance is pretty bad right now (mintupdate-cli is called **4 times!**)
+    - will be fixed in the future
+
+### Sample Output On Terminal
 
 The output on your terminal will looks something like this
 
