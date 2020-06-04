@@ -1,4 +1,8 @@
-## Mock Up For CLI Output
+
+
+### Output On Terminal
+
+The output on your terminal will looks something like this
 
 ```bash
 -- security updates (7) --
