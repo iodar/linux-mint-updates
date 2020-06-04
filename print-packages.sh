@@ -21,9 +21,19 @@ print-kernel-updates-message() {
 }
 
 get-kernel-update-names() {
-  $KERNEL_UPDATES_NAMES=$(echo $(echo -n "$(mintupdate-cli list -k | awk '{print $2 " [ current: "}'    )"; echo -n "$(uname -rv | grep -oP "^[\d\.\w\-\s#]+" | sed 's/-generic #/./')"; echo -e " ]") | column -t)
+  $KERNEL_UPDATES_NAMES=$(
+    echo $(echo -n "$(mintupdate-cli list -k |
+    awk '{print $2 " [ current: "}')"; echo -n "$(uname -rv |
+    grep -oP "^[\d\.\w\-\s#]+" |
+    sed 's/-generic #/./')"; echo -e " ]") |
+    column -t
+  )
 
-  $SEC_UPDATE_NAMES=$(mintupdate-cli list -s | awk '{print $2 " [ version: " $3 " ]"}' | column -t)
+  $SEC_UPDATE_NAMES=$(
+    mintupdate-cli list -s |
+    awk '{print $2 " [ version: " $3 " ]"}' |
+    column -t
+  )
 
 
   # mint update kernel list
