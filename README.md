@@ -5,7 +5,10 @@ summary to yout terminal.
 
 ### Usage
 
-Just download the \[scriptname\] from latest release to your host and call execute it.
+Just download the `summarise-update.sh` from releases page to your host and call execute it
+```bash
+./summarise-updates.sh
+```
 
 ### Known Issues
 
